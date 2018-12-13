@@ -17,9 +17,9 @@
  * Further Notes ![alt text](conda4.png "From Udacity Deep Learning Nanodegree")
 
  * NumPy supports several types of matrix multiplication:
-  * Element-wise Multiplication -- You accomplish that with the * operator.
-  * Matrix Product-- Use NumPy's **matmul** function.
-  * NumPy's dot function -- It turns out that the results of dot and matmul are the same **only if** the matrices are two dimensional.
+   * Element-wise Multiplication -- You accomplish that with the * operator.
+   * Matrix Product-- Use NumPy's **matmul** function.
+   * NumPy's dot function -- It turns out that the results of dot and matmul are the same **only if** the matrices are two dimensional.
 
  * To get the transpose of a matrix(matrix is object from ndarray class) simply access its **T** attribute. NumPy does transpose without moving any data in memory - it simply changes the way it indexes the original matrix - so it’s quite efficient.
  **Careful** ![alt text](conda5.png "From Udacity Deep Learning Nanodegree")
