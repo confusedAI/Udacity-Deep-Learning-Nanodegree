@@ -23,12 +23,12 @@ To avoid errors later, it's best to update all the packages in the default envir
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         **conda upgrade --all**
   ___
  * To install a package, type **conda install ~~package_name~~** in your terminal. For example, to install numpy, type **conda install numpy**
- * ![alt text](conda.png)
+ * ![alt text](Introduction_to_Deep_Learning/Images/conda.png)
 
- * Managing Envirnments ![alt text](conda2.png)
+ * Managing Envirnments ![alt text](Introduction_to_Deep_Learning/Images/conda2.png)
 
- * More options ![alt text](conda3.png)
+ * More options ![alt text](Introduction_to_Deep_Learning/Images/conda3.png)
 
 **Note:**
- *Remember that when you set up an environment initially, you'll only start with the standard packages and whatever packages you specify in your conda create statement.It's also useful to create environments for each project you're working on.When sharing your code on GitHub, it's good practice to make an environment file and include it in the repository. This will make it easier for people to install all the dependencies for your code.
+ *Remember that when you set up an environment initially, you'll only start with the standard packages and whatever packages you specify in your conda create statement. It's also useful to create environments for each project you're working on.When sharing your code on GitHub, it's good practice to make an environment file and include it in the repository. This will make it easier for people to install all the dependencies for your code.
  You can include a pip requirements.txt file using pip freeze [learn more here](https://pip.pypa.io/en/stable/reference/pip_freeze/) for people not using conda.*
