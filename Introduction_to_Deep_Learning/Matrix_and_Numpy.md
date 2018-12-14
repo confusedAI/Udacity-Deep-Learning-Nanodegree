@@ -14,7 +14,7 @@
 
  * The most common way to work with numbers in NumPy is through **ndarray** objects.A numpy array is a grid of values, *all of the same type*(A list is the Python equivalent of an array, but can contain elements of different types), and is indexed by a tuple of nonnegative integers. The number of dimensions is the rank of the array; the shape of an array is a tuple of integers giving the size of the array along each dimension.
 
- * Further Notes ![alt text](conda4.png "From Udacity Deep Learning Nanodegree")
+ * Further Notes ![alt text](Images/conda4.png "From Udacity Deep Learning Nanodegree")
 
  * NumPy supports several types of matrix multiplication:
    * Element-wise Multiplication -- You accomplish that with the * operator.
@@ -22,4 +22,4 @@
    * NumPy's dot function -- It turns out that the results of dot and matmul are the same **only if** the matrices are two dimensional.
 
  * To get the transpose of a matrix(matrix is object from ndarray class) simply access its **T** attribute. NumPy does transpose without moving any data in memory - it simply changes the way it indexes the original matrix - so it’s quite efficient.
- **Careful** ![alt text](conda5.png "From Udacity Deep Learning Nanodegree")
+ **Careful** ![alt text](Images/conda5.png "From Udacity Deep Learning Nanodegree")
