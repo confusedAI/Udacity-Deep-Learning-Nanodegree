@@ -36,7 +36,9 @@ Cross entropy loss function averaged over all training examples becomes a cross 
 
 
 ### One hot encoding
- * Categorical variables(or features) are variables that contain categories rather than numeric values. The number of possible categories is often limited to a fixed set. Example:![alt text](Images/cat_data.png)<br/> The first and last column is all text.<br/> Many ML algorithms cannot operate on text data directly. They require all input variables and output variables to be numeric, which means that categorical data must be converted to a numerical form. There are two ways to do that:
+ * Categorical variables(or features) are variables that contain categories rather than numeric values. The number of possible categories is often limited to a fixed set. Example:<br/><br/>
+ ![alt text](Images/cat_data.png)<br/><br/>
+ The first column is all text.<br/> Many ML algorithms cannot operate on text data directly. They require all input variables and output variables to be numeric, which means that categorical data must be converted to a numerical form. There are two ways to do that:
    * Label Encoding -- ![alt text](Images/lab_en.png "LabelEncoder class from the sklearn library")The problem here is, since there are different numbers in the same column, the model will misunderstand the data to be in some kind of order, 0 < 1 < 2, precisely **it will assume higher the categorical value, better the category,** which implies Germany > Spain > France. But this isn’t the case at all. To overcome this problem, we use One Hot Encoding.
 
    * One-hot Encoding -- One hot encoding is a process by which categorical variables are converted into a form that could be provided to ML algorithms to do a better job in prediction.<br/>What one hot encoding does is, it takes a column which has categorical data, which has been label encoded, and then splits the column into multiple columns. The numbers are replaced by 1s and 0s, depending on which column has what value. In our example, we’ll get three new columns, one for each country — France, Germany, and Spain. ![alt text](Images/on_en.png)
