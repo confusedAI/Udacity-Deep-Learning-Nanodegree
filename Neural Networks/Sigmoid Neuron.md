@@ -9,9 +9,30 @@
  * To put it all a little more explicitly, the output of a sigmoid neuron with inputs $x_1,x_2,…,$ weights $w_{1},w_{2},…,$ and bias b is:=$\frac{1}{1+e^{(−\sum_{j}w_jx_j−b)}}$
 
 #### The Softmax Function
-The softmax function is equivalent of the sigmoid activation function, but when the problem has 3 or more classes. Let's say we have N classes
+The softmax function is equivalent of the sigmoid activation function, but when the problem has 3 or more classes.
 
 **Softmax for n=2 classes is same as the sigmoid function.** Think about it, looks like an simple statement but has important details.
+
+### Maximum Likelihood
+Simply put, what should be the values of parameters such that the probability of particular event is maximum.
+Now, we want to pick the model(or hypothesis, or $w_1*x_1 + w_2*x_2 + ...+ w_n*x_n + b$) that gives existing labels the highest probability. Thus by maximizing the probability we can pick the best possible model.<br/>
+
+Error function is a function which simply tells how far are we from the solution.
+<br/>[Realtion between Error function and probability](https://www.youtube.com/watch?v=-xxrisIvD0E)<br/> [Product of probabilities](https://www.youtube.com/watch?time_continue=22&v=njq6bYrPqSU)
+ * Maximising the product of probabilities can lead to very very tiny numbers so we take the negative log of product which changes our goal, from maximizing the probability to minimizing the cross entropy.
+
+ * Cross-entropy loss, or log loss, measures the performance of a classification model whose output is a probability value between 0 and 1. A good model will give a low cross entropy and a bad model will give a high cross entropy.
+ * In binary classification, where the number of classes N equals 2, cross-entropy loss can be calculated as:$-{(y\log(p) + (1 - y)\log(1 - p))}$<br/><br/>
+ If $N>2$ (i.e. multiclass classification), we calculate a separate loss for each class label per observation and sum the result:
+ $-\sum_{c=1}^Ny_{o,c}\log(p_{o,c})$
+     * N - number of classes
+     * log - the natural log
+     * y - binary indicator (0 or 1) if class label c is the correct classification for observation o. **This is a key feature of multiclass logloss, it rewards/penalises probabilities of correct classes only. The value is independent of how the remaining probability is split between incorrect classes.**
+     * p - predicted probability observation o is of class c.
+
+Cross entropy loss function averaged over all training examples becomes a cross entropy cost function.
+
+
 
 
 ### One hot encoding
