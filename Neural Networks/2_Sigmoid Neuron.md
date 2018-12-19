@@ -1,6 +1,6 @@
 ## Sigmoid Neuron and other useful points
 **Why move from Perceptron to Sigmoid neuron ?**
-<br/>--- I don't understand the reason precisely for now. But let's discuss Sigmoid Neuron.
+<br/>--- I don't understand the reason precisely but for now let's discuss Sigmoid Neuron.
 
  * Sigmoid Neuron is like a perceptron, except the inputs $x_1,x_2,…$ instead of being just 0 or 1, can also take on any values between 0 and 1. So, for instance, 0.638… is a valid input for a sigmoid neuron, and similarly the output is not just 0 or 1. Instead, it's $σ(w⋅x+b)$, where σ is called the sigmoid function, and is defined by:
                  $σ(z)=\frac{1}{1+e^{−z}}$
@@ -13,7 +13,7 @@ The softmax function is equivalent of the sigmoid activation function, but when 
 
 **Softmax for n=2 classes is same as the sigmoid function.** Think about it, looks like an simple statement but has important details.
 
-### Maximum Likelihood
+#### Maximum Likelihood
 Simply put, what should be the values of parameters such that the probability of particular event is maximum.
 Now, we want to pick the model(or hypothesis, or $w_1*x_1 + w_2*x_2 + ...+ w_n*x_n + b$) that gives existing labels the highest probability. Thus by maximizing the probability we can pick the best possible model.<br/>
 
@@ -30,9 +30,12 @@ Error function is a function which simply tells how far are we from the solution
      * y - binary indicator (0 or 1) if class label c is the correct classification for observation o. **This is a key feature of multiclass logloss, it rewards/penalises probabilities of correct classes only. The value is independent of how the remaining probability is split between incorrect classes.**
      * p - predicted probability observation o is of class c.
 
-Cross entropy loss function averaged over all training examples becomes a cross entropy cost function.
+Cross entropy loss function averaged over all training examples becomes a cross entropy cost function also called our error function. ![alt text](Images/er_fu.png)
 
+#### Minimize Error Function
+Gradient descent algorithm -- Error function is a function of weights, biases and gradient of E is given by the vector sum of partial derivatives of E w.r.t. W and b. This gradient actually tells the direction we should move in order to increase the eror function the most so we take the negative of gradient to move in opposite direction and decrease the error function the most.<br/> For the size of the step to be taken we introduce the learning rate ($\alpha$). ![alt text](Images/gr_de.png)
 
+[Difference between Gradient descent algorithm and Perceptron algorithm](https://www.youtube.com/watch?v=uL5LuRPivTA)
 
 
 ### One hot encoding
