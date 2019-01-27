@@ -12,14 +12,14 @@ We'll use MNIST database, the most famous database in the field of deep learning
 
 * Training of a neural network is done using some process which involves Loss and Optimization. (Calculating loss)Measure the mistakes between a predicted and true class using some loss function(Cross Entropy loss is often used for categorical data), (Backpropagation)Compute the gradient of the loss w.r.t. model weights, quantifying how bad a particular weight is in making a mistake, (Optimization)Apply gradient descent to calculate better weight values.
 
-* [Defining a network in PyTorch](https://www.youtube.com/watch?v=9gvaQvyfLfY) ![alt text](ReLU.png) [Training the network](https://www.youtube.com/watch?v=904bfqibcCw)
+* [Defining a network in PyTorch](https://www.youtube.com/watch?v=9gvaQvyfLfY) ![alt text](Images/ReLU.png) [Training the network](https://www.youtube.com/watch?v=904bfqibcCw)
 
 * **Cross-Entropy Loss** --
 In the [PyTorch documentation](https://pytorch.org/docs/stable/nn.html#crossentropyloss), we can see that the cross entropy loss function actually involves two steps:
   * It first applies a softmax function to any output is sees.
   * Then applies [NLLLoss](https://pytorch.org/docs/stable/nn.html#nllloss); negative log likelihood loss
 
-Then it returns the average loss over a batch of data. Since it applies a softmax function, we do not have to specify that in the forward function of our model definition, but we could do this another way. ![alt text](Appr.png)
+Then it returns the average loss over a batch of data. Since it applies a softmax function, we do not have to specify that in the forward function of our model definition, but we could do this another way. ![alt text](Images/Appr.png)
 
 * Refer *mnist_mlp_exercise.ipynb* for **MLP Classification, MNIST**<br/>[Activation Functions](http://cs231n.github.io/neural-networks-1/#actfun)
 
@@ -27,4 +27,4 @@ Then it returns the average loss over a batch of data. Since it applies a softma
 
 * Refer *mnist_mlp_solution_with_validation.ipynb* for validation set implementation
 
-* Story so Far: ![alt text](Story.png) Next we'll look on CNN's for image classification task.
+* Story so Far: ![alt text](Images/Story.png) Next we'll look on CNN's for image classification task.
