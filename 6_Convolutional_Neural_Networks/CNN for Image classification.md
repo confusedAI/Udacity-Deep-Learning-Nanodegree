@@ -30,6 +30,5 @@
 
  * Refer: cifar10_cnn.ipynb
 
- * [Check out the CIFAR-10 Competition's winning architecture!](http://blog.kaggle.com/2015/01/02/cifar-10-competition-winners-interviews-with-dr-ben-graham-phil-culliton-zygmunt-zajac/)
-
- * 
+ * [Data Augmentation](https://www.youtube.com/watch?v=zQnx2jZmjTA)  <br/>
+ [Notebook_transform](https://www.youtube.com/watch?v=J_gjHVt9pVw)
