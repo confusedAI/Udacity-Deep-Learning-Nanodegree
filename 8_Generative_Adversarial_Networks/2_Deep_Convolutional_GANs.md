@@ -54,4 +54,3 @@ Further Reading:
   - [DCGAN_paper](https://arxiv.org/pdf/1511.06434.pdf)
   - From DCGAN paper: ![alt text](Images/Arch_ins.png "Architecture guidelines for stable DCGANs")
   - [Batch Normalization paper](https://arxiv.org/pdf/1502.03167.pdf)
-  -
