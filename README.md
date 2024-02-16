@@ -9,7 +9,6 @@ Some of the limitations or tasks I could not complete in the below code:
 4. The train data and validation data were stored on the list rather than a numpy array. Lists are computationally expensive in terms of space reducing batch-size.
 
 5. **For Task 12:** I used the F1 score(%) as the evaluation metric which is token overlap between the predicted answer and the reference answer.</br>
-   **Pitfall** of using F1 score: F1 score is sensitive to exact matches between predicted and reference answers. If the model provides an answer that is semantically correct but not exactly 
-   matched with the reference answer, the F1 score will penalize it.
+   **Pitfall** of using F1 score: F1 score is sensitive to exact matches between predicted and reference answers. If the model provides an answer that is semantically correct but not exactly matched with the reference answer, the F1 score will penalize it.
 
 6. Did not create a separate conda environment for the code to be portable. Directly used the Google Colab notebook which provides pre-installed packages like hugging-face, pytorch, etc.
