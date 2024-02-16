@@ -4,7 +4,7 @@ Some of the limitations or tasks I could not complete in the below code:
 2. **For Task 9:** Adjust dependent layers is not completed.
 
 3. **For Task11:** Training is only done on 8K samples from squad['train']. Due to limited time availability in Google Colab, the data was cut short but the training code will work for the whole data also. The same goes for evaluation, done only on 1K samples.</br>
-&nbsp;&nbsp;&nbsp;&nbsp;**Implications:** The newly trained model won't see all contexts in the train data since context repeats a lot in the SQuAD dataset with different questions.
+**Implications:** The newly trained model won't see all contexts in the train data since context repeats a lot in the SQuAD dataset with different questions.
 
 4. The train data and validation data were stored on the list rather than a numpy array. Lists are computationally expensive in terms of space reducing batch-size.
 
